@@ -1,27 +1,27 @@
 <template>
-  <view class="w-screen">
+  <view class="w-screen flex flex-col items-center">
     <image
-      class="logo w-8"
+      class="logo w-24"
       src="../../static/logo.png"
     ></image>
     <view>
-      <text class="title">{{title}}</text>
+      <text class="title">{{title}} World</text>
     </view>
   </view>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
 export default Vue.extend({
   data() {
     return {
-      title: 'Hello',
-    }
+      title: "Hello",
+    };
   },
   onLoad() {},
   methods: {},
-})
+});
 </script>
 
 <style>
