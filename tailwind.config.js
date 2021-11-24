@@ -1,6 +1,7 @@
-const miniprogramPreset = require('tailwindcss-miniprogram-preset')
+const { defaultPreset } = require('tailwindcss-miniprogram-preset')
+
 /** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
-  purge: miniprogramPreset.purge.content,
-  presets: [miniprogramPreset]
+  purge: defaultPreset.purge.content,
+  presets: [defaultPreset]
 }
