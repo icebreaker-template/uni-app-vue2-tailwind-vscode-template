@@ -18,8 +18,14 @@ module.exports = {
       remove: process.env.UNI_PLATFORM !== 'h5'
     }),
     require('tailwindcss')({ config: './tailwind.config.js' }),
-    
+    // rem 转 rpx
+    require('postcss-rem-to-responsive-pixel/postcss7')({
+      rootValue: 32,
+      propList: ['*'],
+      transformUnit: 'rpx'
+    }),
+
     require('@dcloudio/vue-cli-plugin-uni/packages/postcss'),
-    
+
   ]
 }

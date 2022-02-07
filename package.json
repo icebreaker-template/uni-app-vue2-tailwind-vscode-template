@@ -68,8 +68,8 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.16.0",
-    "@babel/runtime": "~7.16.3",
-    "@dcloudio/types": "2.5.13",
+    "@babel/runtime": "~7.17.0",
+    "@dcloudio/types": "2.5.16",
     "@dcloudio/uni-automator": "^2.0.1-32920211122002",
     "@dcloudio/uni-cli-i18n": "^2.0.1-32920211122002",
     "@dcloudio/uni-cli-shared": "^2.0.1-32920211122002",
@@ -88,14 +88,16 @@
     "cross-env": "^7.0.2",
     "jest": "^27.3.1",
     "mini-types": "*",
-    "miniprogram-api-typings": "3.4.4",
+    "miniprogram-api-typings": "3.4.5",
     "postcss-comment": "^2.0.0",
+    "postcss-rem-to-responsive-pixel": "^5.1.1",
     "sass": "^1.43.4",
     "sass-loader": "10.2.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "tailwindcss-miniprogram-preset": "^2.0.0",
     "typescript": "^4.5.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "weapp-tailwindcss-webpack-plugin": "^1.0.6"
   },
   "browserslist": [
     "Android >= 4",

@@ -1,5 +1,7 @@
 # uni-app vue2 tailwindcss 模板
 
+> 已经支持 tailwindcss jit 模式!
+
 [English](./README_en.md)
 
 这是一个使用 `vue2` 来开发 `uni-app` 的模板,辅助以小程序定制化的 `tailwindcss`
