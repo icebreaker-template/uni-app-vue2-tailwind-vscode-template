@@ -61,8 +61,6 @@
     "core-js": "^3.21.1",
     "regenerator-runtime": "^0.13.9",
     "vue": "^2.6.11",
-    "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^9.1.2",
     "vuex": "^3.2.0"
   },
   "devDependencies": {
@@ -85,7 +83,6 @@
     "@vue/cli-service": "~4.5.15",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
-    "jest": "^27.5.1",
     "mini-types": "*",
     "miniprogram-api-typings": "3.4.6",
     "postcss-comment": "^2.0.0",
