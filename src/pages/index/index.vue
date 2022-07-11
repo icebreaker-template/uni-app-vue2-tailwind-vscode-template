@@ -1,11 +1,11 @@
 <template>
   <view class="w-screen flex flex-col items-center">
     <image
-      class="logo w-24"
+      class="w-12 h-12"
       src="../../static/logo.png"
     ></image>
     <view>
-      <text class="title">{{title}} World</text>
+      <text class="text-6xl text-gray-800">{{title}} World</text>
     </view>
     <view :class="[
       flag?'bg-red-900':'bg-[#fafa00]',
