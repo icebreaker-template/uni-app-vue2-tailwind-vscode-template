@@ -39,7 +39,12 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "open:dev": "weapp open -p dist/dev/mp-weixin",
+    "open:build": "weapp open -p dist/build/mp-weixin",
+    "weapp:login": "weapp login",
+    "upload:dev": "weapp upload -p dist/dev/mp-weixin -v 1.0.0 -d \"dev version\"",
+    "upload:build": "weapp upload -p dist/build/mp-weixin -v 1.0.0 -d \"release version\""
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.1-32920211122002",
@@ -58,14 +63,14 @@
     "@dcloudio/uni-quickapp-webview": "^2.0.1-32920211122002",
     "@dcloudio/uni-stat": "^2.0.1-32920211122002",
     "@vue/shared": "^3.2.31",
-    "core-js": "^3.21.1",
+    "core-js": "^3.24.0",
     "regenerator-runtime": "^0.13.9",
     "vue": "^2.6.11",
     "vuex": "^3.2.0"
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.16.0",
-    "@babel/runtime": "~7.18.6",
+    "@babel/runtime": "~7.18.9",
     "@dcloudio/types": "2.6.12",
     "@dcloudio/uni-automator": "^2.0.1-32920211122002",
     "@dcloudio/uni-cli-i18n": "^2.0.1-32920211122002",
@@ -87,12 +92,13 @@
     "miniprogram-api-typings": "3.5.0",
     "postcss-comment": "^2.0.0",
     "postcss-rem-to-responsive-pixel": "^5.1.1",
-    "sass": "^1.49.9",
+    "sass": "^1.54.0",
     "sass-loader": "~10.2.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "tailwindcss-miniprogram-preset": "^2.0.0",
     "typescript": "^4.6.2",
-    "vue-template-compiler": "^2.6.11",
+    "vue-template-compiler": "^2.7.8",
+    "weapp-ide-cli": "^1.0.0",
     "weapp-tailwindcss-webpack-plugin": "^1.6.8"
   },
   "browserslist": [
