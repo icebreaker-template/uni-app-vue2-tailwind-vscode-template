@@ -1,7 +1,7 @@
-
+const { WeappTailwindcssDisabled } = require("./platform");
 const {
-  UniAppWeappTailwindcssWebpackPluginV4
-} = require('weapp-tailwindcss-webpack-plugin')
+  UniAppWeappTailwindcssWebpackPluginV4,
+} = require("weapp-tailwindcss-webpack-plugin");
 
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
@@ -9,9 +9,13 @@ const {
 const config = {
   //....
   configureWebpack: {
-    plugins: [new UniAppWeappTailwindcssWebpackPluginV4()]
-  }
+    plugins: [
+      new UniAppWeappTailwindcssWebpackPluginV4({
+        disabled: WeappTailwindcssDisabled,
+      }),
+    ],
+  },
   //....
-}
+};
 
-module.exports = config
+module.exports = config;
