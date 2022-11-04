@@ -18,4 +18,5 @@ export default Vue.extend({
 /*每个页面公共css */
 @import "tailwindcss/base";
 @import "tailwindcss/utilities";
+@import "uview-ui/index.scss";
 </style>

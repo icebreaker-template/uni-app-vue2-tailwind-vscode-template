@@ -15,6 +15,7 @@ const config = {
       }),
     ],
   },
+  transpileDependencies: ['uview-ui']
   //....
 };
 
