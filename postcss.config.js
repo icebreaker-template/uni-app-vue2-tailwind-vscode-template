@@ -1,6 +1,7 @@
 const path = require("path");
+const webpack = require('webpack');
 const { WeappTailwindcssDisabled } = require("./platform");
-module.exports = {
+const config = {
   parser: require("postcss-comment"),
   plugins: [
     require("postcss-import")({
@@ -31,3 +32,9 @@ module.exports = {
     require("@dcloudio/vue-cli-plugin-uni/packages/postcss"),
   ],
 };
+
+if (webpack.version[0] > 4) {
+  delete config.parser
+}
+
+module.exports = config

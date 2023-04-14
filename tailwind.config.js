@@ -4,11 +4,7 @@
 // https://github.com/sonofmagic/weapp-tailwindcss-webpack-plugin/blob/main/demo/uni-app/tailwind.config.js
 /** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content: ['public/index.html', './src/**/*.{vue,js,ts,jsx,tsx,wxml}']
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ['public/index.html', './src/**/*.{vue,js,ts,jsx,tsx,wxml}'],
   theme: {
     extend: {}
   },

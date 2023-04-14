@@ -1,6 +1,6 @@
 const { WeappTailwindcssDisabled } = require("./platform");
 const {
-  UniAppWeappTailwindcssWebpackPluginV4,
+  UnifiedWebpackPluginV5
 } = require("weapp-tailwindcss-webpack-plugin");
 
 /**
@@ -10,10 +10,14 @@ const config = {
   //....
   configureWebpack: {
     plugins: [
-      new UniAppWeappTailwindcssWebpackPluginV4({
+      new UnifiedWebpackPluginV5({
         disabled: WeappTailwindcssDisabled,
       }),
     ],
+  },
+  chainWebpack: (config) => {
+    // 去除ts类型检测，因为uni-app ts type 支持其实不咋好
+    config.plugins.delete('fork-ts-checker')
   },
   transpileDependencies: ['uview-ui']
   //....

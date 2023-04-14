@@ -14,9 +14,10 @@
             </view>
           </u-cell>
         </u-cell-group>
-        
+
       </view>
     </view>
+    <view :class="classArray">classArray</view>
     <image class="w-12 h-12" src="../../static/logo.png"></image>
     <view>
       <text class="text-[1.1em] text-gray-800">{{ title }} World</text>
@@ -58,9 +59,15 @@ export default Vue.extend({
     return {
       title: "Hello",
       flag: true,
+      // https://uniapp.dcloud.net.cn/tutorial/vue-basics.html#class-%E4%B8%8E-style-%E7%BB%91%E5%AE%9A
+      // 小程序端不支持 classObject 和 styleObject 语法。
+      classObj: {
+        'bg-[#123456]': true,
+        'text-[#654321]': true
+      },
+      classArray: [true ? 'bg-[#123456]' : undefined, 'text-[#654321]']
     };
   },
-  onLoad() { },
   methods: {},
 });
 </script>

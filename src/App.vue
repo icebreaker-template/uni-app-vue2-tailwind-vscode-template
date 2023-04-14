@@ -1,6 +1,7 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
+  // @ts-ignore
   mpType: "app",
   onLaunch() {
     console.log("App Launch");
