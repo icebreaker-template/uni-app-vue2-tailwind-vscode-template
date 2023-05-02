@@ -4,7 +4,7 @@
       <view>uview-ui 2</view>
       <view>
         <u-button :customStyle="{ width: '200px' }" text="月落"></u-button>
-        <u--text text="我用十年青春,赴你最后之约"></u--text>
+        <!-- <u--text text="我用十年青春,赴你最后之约"></u--text> -->
         <u-cell-group>
           <u-cell icon="setting-fill" title="个人设置"></u-cell>
           <u-cell icon="integral-fill" title="会员等级" value="新版本"></u-cell>
@@ -17,7 +17,7 @@
 
       </view>
     </view>
-    <view :class="classArray">classArray</view>
+    <view :class="classArray">classArray bg-url</view>
     <image class="w-12 h-12" src="../../static/logo.png"></image>
     <view>
       <text class="text-[1.1em] text-gray-800">{{ title }} World</text>
@@ -26,8 +26,8 @@
       flag ? 'bg-red-900' : 'bg-[#fafa00]',
     ]">Toggle</view>
     <view :class="{
-      'bg-[#fafa00]': flag === true,
-    }">Toggle</view>
+        'bg-[#fafa00]': flag === true,
+      }">Toggle</view>
     <view class="p-[20px] -mt-2 mb-[-20px] ">p-[20px] -mt-2 mb-[-20px] margin的jit 不能这么写 -m-[20px]</view>
     <view class="space-y-[1.6rem]">
       <view class="w-[300rpx] text-black text-opacity-[0.19]">w-[300rpx] text-black text-opacity-[0.19]</view>
@@ -65,7 +65,7 @@ export default Vue.extend({
         'bg-[#123456]': true,
         'text-[#654321]': true
       },
-      classArray: [true ? 'bg-[#123456]' : undefined, 'text-[#654321]']
+      classArray: [true ? 'bg-[#123456]' : undefined, 'text-[#654321]', "bg-[url('https://xxx.com/xx.webp')]"]
     };
   },
   methods: {},
