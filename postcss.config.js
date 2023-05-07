@@ -23,7 +23,7 @@ const config = {
     // rem 转 rpx
     WeappTailwindcssDisabled
       ? undefined
-      : require("postcss-rem-to-responsive-pixel/postcss7")({
+      : require("postcss-rem-to-responsive-pixel")({
           rootValue: 32,
           propList: ["*"],
           transformUnit: "rpx",

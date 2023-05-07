@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "uni-app-vue2-tailwind-vscode-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -69,7 +69,7 @@
     "@dcloudio/uni-stacktracey": "2.0.2-alpha-3080120230428001",
     "@dcloudio/uni-stat": "2.0.2-alpha-3080120230428001",
     "@vue/shared": "^3.0.0",
-    "core-js": "^3.30.1",
+    "core-js": "^3.30.2",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.13.11",
     "uview-ui": "^2.0.36",
@@ -108,7 +108,7 @@
     "typescript": "^4.6.2",
     "vue-template-compiler": "^2.7.14",
     "weapp-ide-cli": "^1.0.1",
-    "weapp-tailwindcss-webpack-plugin": "^2.1.4"
+    "weapp-tailwindcss-webpack-plugin": "^2.2.0"
   },
   "browserslist": [
     "Android >= 4",

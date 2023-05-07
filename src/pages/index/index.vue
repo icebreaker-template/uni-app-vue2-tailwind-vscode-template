@@ -1,10 +1,17 @@
 <template>
   <view class="w-screen flex flex-col items-center">
+    <view
+      class="bg-[url(https://pic1.zhimg.com/v2-3ee20468f54bbfefcd0027283b21aaa8_720w.jpg)] bg-[length:100%_100%] bg-no-repeat w-screen h-[41.54vw]">
+    </view>
+
+    <view class="after:content-['uni-app-vue2-tailwind-vscode-template'] text-sky-400"></view>
+
+   
+    <view class="text-gray-900/75 mb-2 before:content-['让我们开始神奇的_*tailwindcss*_开发吧！']"></view>
     <view>
       <view>uview-ui 2</view>
       <view>
         <u-button :customStyle="{ width: '200px' }" text="月落"></u-button>
-        <!-- <u--text text="我用十年青春,赴你最后之约"></u--text> -->
         <u-cell-group>
           <u-cell icon="setting-fill" title="个人设置"></u-cell>
           <u-cell icon="integral-fill" title="会员等级" value="新版本"></u-cell>
@@ -18,7 +25,7 @@
       </view>
     </view>
     <view :class="classArray">classArray bg-url</view>
-    <image class="w-12 h-12" src="../../static/logo.png"></image>
+    
     <view>
       <text class="text-[1.1em] text-gray-800">{{ title }} World</text>
     </view>
@@ -26,8 +33,8 @@
       flag ? 'bg-red-900' : 'bg-[#fafa00]',
     ]">Toggle</view>
     <view :class="{
-        'bg-[#fafa00]': flag === true,
-      }">Toggle</view>
+      'bg-[#fafa00]': flag === true,
+    }">Toggle</view>
     <view class="p-[20px] -mt-2 mb-[-20px] ">p-[20px] -mt-2 mb-[-20px] margin的jit 不能这么写 -m-[20px]</view>
     <view class="space-y-[1.6rem]">
       <view class="w-[300rpx] text-black text-opacity-[0.19]">w-[300rpx] text-black text-opacity-[0.19]</view>
@@ -72,27 +79,3 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin: 200rpx auto 50rpx auto;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
-</style>
