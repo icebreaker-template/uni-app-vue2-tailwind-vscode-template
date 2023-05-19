@@ -1,7 +1,5 @@
 const { WeappTailwindcssDisabled } = require("./platform");
-const {
-  UnifiedWebpackPluginV5
-} = require("weapp-tailwindcss-webpack-plugin");
+const { UnifiedWebpackPluginV5 } = require("weapp-tailwindcss/webpack");
 
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
