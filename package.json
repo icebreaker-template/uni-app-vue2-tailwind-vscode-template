@@ -101,14 +101,14 @@
     "miniprogram-api-typings": "3.12.0",
     "postcss-comment": "^2.0.0",
     "postcss-rem-to-responsive-pixel": "^5.1.1",
-    "sass": "^1.66.1",
+    "sass": "^1.67.0",
     "sass-loader": "~13.3.2",
     "tailwindcss": "^3.3.3",
     "tailwindcss-miniprogram-preset": "^2.0.0",
     "typescript": "^5.2.2",
     "vue-template-compiler": "^2.7.14",
     "weapp-ide-cli": "^1.0.1",
-    "weapp-tailwindcss": "^2.8.4"
+    "weapp-tailwindcss": "^2.9.1"
   },
   "browserslist": [
     "Android >= 4",
