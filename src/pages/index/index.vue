@@ -27,35 +27,18 @@
 
     <view class="text-lg font-semibold">写法示例</view>
     <view :class="classArray">classArray bg-url</view>
-
     <view>
-      <text class="text-[1.1em] text-gray-800">{{ title }} World</text>
-    </view>
-    <view :class="[
-      flag ? 'bg-red-900' : 'bg-[#fafa00]',
-    ]">Toggle</view>
-    <view :class="{
-      'bg-[#fafa00]': flag === true,
-    }">Toggle</view>
-    <view class="p-[20px] -mt-2 mb-[-20px] ">p-[20px] -mt-2 mb-[-20px] margin的jit 不能这么写 -m-[20px]</view>
-    <view class="space-y-[1.6rem]">
-      <view class="w-[300rpx] text-black text-opacity-[0.19]">w-[300rpx] text-black text-opacity-[0.19]</view>
-      <view class="min-w-[300rpx] max-h-[100px] text-[20px] leading-[0.9]">min-w-[300rpx] max-h-[100px] text-[20px]
-        leading-[0.9]</view>
-      <view class="max-w-[300rpx] min-h-[100px] text-[#dddddd]">max-w-[300rpx] min-h-[100px] text-[#dddddd]</view>
-      <view
-        class="flex items-center justify-center h-[100px] w-[100px] rounded-[40px] bg-[#123456] bg-opacity-[0.54] text-[#ffffff]">
-        Hello</view>
-      <view class="border-[10px] border-[#098765] border-solid border-opacity-[0.44]">border-[10px] border-[#098765]
-        border-solid border-opacity-[0.44]</view>
-      <view class="grid grid-cols-3 divide-x-[10px] divide-[#010101] divide-solid">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+      <view class="ifdef-[MP-WEIXIN]:bg-blue-500 ifndef-[MP-WEIXIN]:bg-red-500">
+        样式的条件编译:微信小程序为蓝色，不是微信小程序为红色
       </view>
-      <view class="w-32 py-2 rounded-md font-semibold text-white bg-pink-500 ring-4 ring-pink-300">
-        Default
+
+      <view class="wx:bg-blue-500 -wx:bg-red-500">
+        <view>自定义配置的方式进行样式条件编译</view>
+        <view>相关配置见根目录下的tailwind.config.js</view>
       </view>
+
+      <view class="apply-class-0">@apply 条件编译方式0</view>
+      <view class="apply-class-1">@apply 条件编译方式1</view>
     </view>
   </view>
 </template>
@@ -81,3 +64,14 @@ export default Vue.extend({
 });
 </script>
 
+
+<style lang="scss">
+.apply-class-0 {
+  @apply ifdef-[MP-WEIXIN]:bg-blue-500 ifndef-[MP-WEIXIN]:bg-red-500;
+}
+
+.apply-class-1 {
+  // 这个需要在 tailwind.config.js 里进行自定义配置
+  @apply wx:bg-blue-500 -wx:bg-red-500;
+}
+</style>
