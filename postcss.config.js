@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require('webpack');
-const { WeappTailwindcssDisabled } = require("./platform");
+
 const config = {
   parser: require("postcss-comment"),
   plugins: [
@@ -21,15 +21,6 @@ const config = {
     }),
     require("tailwindcss")({ config: "./tailwind.config.js" }),
     require('weapp-tailwindcss/css-macro/postcss'),
-    // rem 转 rpx
-    WeappTailwindcssDisabled
-      ? undefined
-      : require("postcss-rem-to-responsive-pixel")({
-        rootValue: 32,
-        propList: ["*"],
-        transformUnit: "rpx",
-      }),
-
     require("@dcloudio/vue-cli-plugin-uni/packages/postcss"),
   ],
 };

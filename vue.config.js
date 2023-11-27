@@ -9,6 +9,7 @@ const config = {
   configureWebpack: {
     plugins: [
       new UnifiedWebpackPluginV5({
+        rem2rpx: true,
         disabled: WeappTailwindcssDisabled,
       }),
     ],
