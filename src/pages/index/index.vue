@@ -7,7 +7,7 @@
     <view class="after:content-['uni-app-vue2-tailwind-vscode-template'] text-sky-400"></view>
 
 
-    <view class="text-gray-900/75 mb-2 before:text-sky-500 before:content-['让我们开始神奇的_*tailwindcss*_开发吧！']"></view>
+    <view class="text-gray-900/75 mb-2 before:text-sky-500 before:content-['让我们开始神奇的_tailwindcss_开发吧！']"></view>
     <view>
       <view class="text-lg font-semibold">uview-ui 2 控件示例</view>
       <view>
