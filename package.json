@@ -77,9 +77,9 @@
     "vuex": "^3.2.0"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-typescript": "^7.23.3",
-    "@babel/plugin-transform-runtime": "^7.23.7",
-    "@babel/runtime": "~7.23.7",
+    "@babel/plugin-syntax-typescript": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/runtime": "~7.24.7",
     "@dcloudio/types": "^3.4.8",
     "@dcloudio/uni-automator": "2.0.2-4010520240507001",
     "@dcloudio/uni-cli-i18n": "2.0.2-4010520240507001",
@@ -101,14 +101,14 @@
     "miniprogram-api-typings": "3.12.2",
     "postcss-comment": "^2.0.0",
     "postcss-rem-to-responsive-pixel": "^6.0.1",
-    "sass": "^1.77.2",
-    "sass-loader": "~13.3.3",
-    "tailwindcss": "^3.4.3",
+    "sass": "^1.77.5",
+    "sass-loader": "~14.2.1",
+    "tailwindcss": "^3.4.4",
     "tailwindcss-miniprogram-preset": "^2.0.0",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.5",
     "vue-template-compiler": "^2.7.16",
     "weapp-ide-cli": "^1.0.1",
-    "weapp-tailwindcss": "^3.2.1"
+    "weapp-tailwindcss": "^3.3.1"
   },
   "browserslist": [
     "Android >= 4",
