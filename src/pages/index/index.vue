@@ -57,7 +57,7 @@ export default Vue.extend({
         'bg-[#123456]': true,
         'text-[#654321]': true
       },
-      classArray: [true ? 'bg-[#123456]' : undefined, 'text-[#654321]', "bg-[url('https://xxx.com/xx.webp')]"]
+      classArray: [true ? 'bg-[#123456]' : undefined, 'text-[#ffaaaa]', "bg-[url('https://xxx.com/xx.webp')]"]
     };
   },
   methods: {},
