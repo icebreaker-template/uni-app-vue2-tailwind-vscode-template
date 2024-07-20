@@ -17,7 +17,7 @@
           <u-cell icon="integral-fill" title="会员等级" value="新版本"></u-cell>
           <u-cell value="内容">
             <view slot="title" class="u-slot-title">
-              <text class="u-cell-text text-[red]">单元格</text>
+              <text class="u-cell-text text-[#00aaaa]">单元格</text>
             </view>
           </u-cell>
         </u-cell-group>
