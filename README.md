@@ -4,11 +4,25 @@
 
 ## 文档地址
 
-<https://weapp-tw.icebreaker.top/>
+<https://tw.icebreaker.top/>
 
 ## 快速开始
 
-本项目已经集成 `weapp-ide-cli` 可以通过 `cli` 对 `ide` 进行额外操作，[详细信息](https://www.npmjs.com/package/weapp-ide-cli)
+> 本项目已经集成 `weapp-ide-cli` 可以通过 `cli` 对 `ide` 进行额外操作，[详细信息](https://www.npmjs.com/package/weapp-ide-cli)
+
+### 构建小程序
+
+```bash
+yarn dev:mp-weixin
+```
+
+### 打开微信开发者工具
+
+> 需要打开开发者工具，设置，安全中的服务端口选项
+
+```bash
+yarn open:dev
+```
 
 ## Tips
 
