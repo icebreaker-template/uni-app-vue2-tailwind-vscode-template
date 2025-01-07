@@ -20,5 +20,11 @@ export default Vue.extend({
 @import "tailwindcss/base";
 @import 'tailwindcss/components';
 @import "tailwindcss/utilities";
-@import "uview-ui/index.scss";
+// @import "uview-ui/index.scss";
+
+$app-font-size: 16px;
+
+.aaaabbbb {
+  font-size: $app-font-size;
+}
 </style>
