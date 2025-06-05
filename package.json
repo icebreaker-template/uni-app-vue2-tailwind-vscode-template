@@ -80,8 +80,8 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.27.1",
-    "@babel/plugin-transform-runtime": "^7.27.3",
-    "@babel/runtime": "~7.27.3",
+    "@babel/plugin-transform-runtime": "^7.27.4",
+    "@babel/runtime": "~7.27.4",
     "@dcloudio/types": "^3.4.15",
     "@dcloudio/uni-automator": "2.0.2-4060620250520001",
     "@dcloudio/uni-cli-i18n": "2.0.2-4060620250520001",
@@ -111,7 +111,7 @@
     "typescript": "^5.8.3",
     "vue-template-compiler": "^2.7.16",
     "weapp-ide-cli": "^2.0.12",
-    "weapp-tailwindcss": "^4.1.7"
+    "weapp-tailwindcss": "^4.1.8"
   },
   "browserslist": [
     "Android >= 4",
